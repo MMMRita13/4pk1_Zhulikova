@@ -10,31 +10,30 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace pz14
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Search.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Search : Window
     {
-        private Facad _facade;
-        public MainWindow()
+        public string Title { get; private set; }
+        public Search(string title)
         {
             InitializeComponent();
-            _facade = new Facad();
+            Title = title;
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+       
+        public void AcceptedToAssembly()
         {
-             _facade.StopProduction();
+            statusTB.Text = $"Поиск отеля {Title}";
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void GetFinishedProduct()
         {
-           _facade.StartProduction(hostelName.Text);
+            statusTB.Text = "Отель найден";
         }
+        
     }
 }

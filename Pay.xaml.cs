@@ -10,31 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace pz14
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Pay.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pay : Window
     {
-        private Facad _facade;
-        public MainWindow()
+        public string Title { get; private set; }
+        public Pay(string title)
         {
             InitializeComponent();
-            _facade = new Facad();
+            Title = title;
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        public void ReadyToWork()
         {
-             _facade.StopProduction();
+            statusTB.Text = $"Предоплата для отеля {Title} прошла";
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Postponed()
         {
-           _facade.StartProduction(hostelName.Text);
+            statusTB.Text = "Чек отправлен на почту";
         }
+        
     }
 }
