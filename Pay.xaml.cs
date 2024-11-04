@@ -25,9 +25,9 @@ namespace pz14
             InitializeComponent();
             Title = title;
         }
-        public void ReadyToWork()
+        public void ReadyToWork(string paymentMethod)
         {
-            statusTB.Text = $"Предоплата для отеля {Title} прошла";
+            statusTB.Text = $"Предоплата для отеля {Title} прошла ({paymentMethod}).";
         }
         public void Postponed()
         {

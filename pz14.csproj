@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="IPaymentSystem.cs" />
     <Compile Include="Pay.xaml.cs">
       <DependentUpon>Pay.xaml</DependentUpon>
     </Compile>

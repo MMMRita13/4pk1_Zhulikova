@@ -9,37 +9,43 @@ namespace pz14
     internal class Facad
     {
         private Reservation _reservation;
-        private Pay _pay;
+        private IPaymentSystem _paymentSystem; // Интерфейс платёжной системы
         private Search _search;
 
         public void InitProduction(string title)
         {
             _search = new Search(title);
             _reservation = new Reservation(title);
-            _pay = new Pay(title);
-            
+
+            // В зависимости от логики, выбираем платежную систему
+            // Например, для демонстрации выберем CreditCardPayment
+            var paymentType = new CreditCardPayment(); // или new EWalletPayment();
+            _paymentSystem = new PaymentAdapter(paymentType);
+
             _search.Show();
             _reservation.Show();
-            _pay.Show();
-            
+
+            // Создаём экземпляр Pay и передаём в адаптер
+            Pay pay = new Pay(title);
+            pay.Show();
+
+            // Вызов адаптера для обработки платежа
+            _paymentSystem.ProcessPayment(title, pay);
         }
 
         public void StartProduction(string title)
         {
             InitProduction(title);
-            
+
             _search.AcceptedToAssembly();
             _reservation.AcceptedToAssembly();
-            _pay.ReadyToWork();
-            
         }
 
         public void StopProduction()
         {
             _search.GetFinishedProduct();
             _reservation.GetFinishedProduct();
-            _pay.Postponed();
-            
+            Console.WriteLine("Производство остановлено.");
         }
     }
 }
