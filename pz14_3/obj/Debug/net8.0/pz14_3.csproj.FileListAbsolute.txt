@@ -1,0 +1,15 @@
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\bin\Debug\net8.0\pz14_3.exe
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\bin\Debug\net8.0\pz14_3.deps.json
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\bin\Debug\net8.0\pz14_3.runtimeconfig.json
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\bin\Debug\net8.0\pz14_3.dll
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\bin\Debug\net8.0\pz14_3.pdb
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.AssemblyInfoInputs.cache
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.AssemblyInfo.cs
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.csproj.CoreCompileInputs.cache
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.sourcelink.json
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.dll
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\refint\pz14_3.dll
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.pdb
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\pz14_3.genruntimeconfig.cache
+C:\Users\Маргарита\Source\Repos\4pk1_Zhulikova\pz14_3\obj\Debug\net8.0\ref\pz14_3.dll
